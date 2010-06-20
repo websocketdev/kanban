@@ -9,7 +9,9 @@ function() {
   $("ul").droppable({
     drop: function(ev, ui) {
       var task = ui.draggable;
-      alert(task.html());
+      alert(task.parent().attr("id")); // from
+      var dest = $(this);
+      alert(dest.attr("id"));
     }    
   });
 }
