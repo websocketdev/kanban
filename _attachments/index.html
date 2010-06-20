@@ -10,18 +10,12 @@
       <a href="#">New Task</a>
     </div>
     <div id="wrapper">
-      <div id="backlog"></div>
-      <div id="working"></div>
-      <div id="done"></div>
     </div>
   </body>
   <script src="vendor/couchapp/loader.js"></script>
   <script type="text/javascript" src="js/jquery-ui-1.8.custom.min.js"></script>
   <script type="text/javascript" charset="utf-8">
     $.couch.app(function(app) {
-      $("#backlog").evently("backlog", app);
-      $("#working").evently("working", app);
-      $("#done").evently("done", app);
       $("#wrapper").evently("wrapper", app);
     });
   </script>

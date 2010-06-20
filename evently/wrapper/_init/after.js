@@ -5,4 +5,11 @@ function() {
     helper: 'clone',
     placeholder: 'ui-state-highlight'
   });
+
+  $("ul").droppable({
+    drop: function(ev, ui) {
+      var task = ui.draggable;
+      alert(task.html());
+    }    
+  });
 }

@@ -21,7 +21,7 @@ body {
   margin: 0px auto;
 }
 
-#backlog, #working, #done {
+#backlog_div, #working_div, #done_div {
   float: left;
   width: 320px;
 }
