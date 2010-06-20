@@ -5,6 +5,7 @@ function(resp) {
 
   resp.rows.forEach(function(r) {
     var v = r.value;
+
     if (v.bin == 'backlog')
       backlog.push(v);
     else if (v.bin == 'working')
