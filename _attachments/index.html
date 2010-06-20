@@ -7,7 +7,6 @@
   </head>
   <body>
     <div id="nav">
-      <a href="#">New Task</a>
     </div>
     <div id="wrapper">
     </div>
@@ -17,6 +16,7 @@
   <script type="text/javascript" charset="utf-8">
     $.couch.app(function(app) {
       $("#wrapper").evently("wrapper", app);
+      $("#nav").evently("nav", app);
     });
   </script>
 </html>
