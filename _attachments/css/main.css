@@ -48,3 +48,7 @@ li {
 .ui-state-highlight {
   height: 3.0em;
 }
+
+#new-task a, #new-task span {
+  color: white;
+}
