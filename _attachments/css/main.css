@@ -1,0 +1,50 @@
+/* add styles here */
+
+body {
+  font-family: "Lucida Grande", Verdana, sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+#nav {
+  background: black;
+  height: 36px;
+}
+
+#nav a {
+  color: white;
+}
+
+#wrapper {
+  width: 960px;
+  margin: 0px auto;
+}
+
+#backlog, #working, #done {
+  float: left;
+  width: 320px;
+}
+
+h3 {
+  text-align: center;
+}
+
+ul {
+  margin: 4px;
+  padding: 10px;
+  min-height: 600px;
+  height: auto;
+}
+
+li {
+  list-style-type: none;
+  margin: 5px;
+  padding: 5px;
+  font-size: 1.2em;
+  cursor: move;
+}
+
+.ui-state-highlight {
+  height: 3.0em;
+}
