@@ -7,5 +7,9 @@ function(e, task) {
     bin: "backlog"
   };
 
-  app.db.saveDoc(newTask);
+  app.db.saveDoc(newTask, {
+    success : function() {
+      $("input[name=task]").val("");
+    }
+  });
 }
