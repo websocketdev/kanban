@@ -12,13 +12,19 @@ function() {
     drop: function(ev, ui) {
       var task = ui.draggable.children("p");
       var newBin = $(this).attr("id");
-      
-      app.db.saveDoc({
+      var newDoc = {
         _id:  task.attr("_id"),
         _rev: task.attr("_rev"),
         text: task.text(),
         type: "task",
         bin: newBin
+      }
+      
+      app.db.saveDoc(newDoc, {
+        success : function(resp) {
+          //alert('hahaha ' + resp.rev);
+          task.attr("_rev", resp.rev);
+        }
       });
     }    
   });
